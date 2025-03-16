@@ -14,26 +14,32 @@ const tabs: TabType = [
   {
     icon: <HomeIcon />,
     label: 'Home',
+    id: 'home',
   },
   {
     icon: <CodeIcon />,
     label: 'Skills',
+    id: 'skills',
   },
   {
     icon: <BusinessCenterIcon />,
     label: 'Experience',
+    id: 'experience',
   },
   {
     icon: <SchoolIcon />,
     label: 'Education',
+    id: 'education',
   },
   {
     icon: <ComputerIcon />,
     label: 'Projects',
+    id: 'projects',
   },
   {
     icon: <EmailIcon />,
     label: 'Contact',
+    id: 'contact',
   },
 ];
 
@@ -77,11 +83,12 @@ export const Header = () => {
             },
           }}
         >
-          {tabs.map(({icon, label}, index) => (
+          {tabs.map(({icon, label, id}, index) => (
             <Tab
               key={index}
               icon={icon}
               aria-label={label}
+              href={`#${id}`}
               sx={{
                 minWidth: '50px',
                 padding: '8px 12px',
