@@ -47,7 +47,7 @@ export const Header = () => {
     <>
       <Box
         sx={{
-          width: '420px',
+          width: '320px',
           position: 'fixed',
           top: '90%',
           left: 0,
@@ -60,6 +60,8 @@ export const Header = () => {
           value={value}
           onChange={handleChange}
           sx={{
+            alignItems: 'center',
+            padding: '0px 5px',
             '& .MuiTabs-list': {
               justifyContent: 'center',
               borderRadius: '10px',
@@ -81,8 +83,8 @@ export const Header = () => {
               icon={icon}
               aria-label={label}
               sx={{
-                minWidth: '70px',
-                padding: '10px 14px',
+                minWidth: '50px',
+                padding: '8px 12px',
                 minHeight: '24px',
                 color: 'white',
               }}
